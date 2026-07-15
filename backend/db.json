@@ -1,0 +1,96 @@
+{
+  "categories": [
+    { "id": "cat-1", "name": "Plumbing", "description": "Pipes, taps, sinks, drains", "icon": "🔧", "priceRange": "৳500-৳3000" },
+    { "id": "cat-2", "name": "Electrical", "description": "Wiring, switches, fans, lights", "icon": "💡", "priceRange": "৳300-৳5000" },
+    { "id": "cat-3", "name": "AC Repair", "description": "Split AC, Window AC, Servicing", "icon": "❄️", "priceRange": "৳800-৳8000" },
+    { "id": "cat-4", "name": "Painting", "description": "Interior, exterior, touch-ups", "icon": "🎨", "priceRange": "৳2000-৳20000" },
+    { "id": "cat-5", "name": "Carpentry", "description": "Furniture repair, assembly", "icon": "🪚", "priceRange": "৳500-৳10000" },
+    { "id": "cat-6", "name": "Appliance Repair", "description": "Refrigerator, washing machine, TV", "icon": "🔌", "priceRange": "৳400-৳5000" },
+    { "id": "cat-7", "name": "Cleaning", "description": "Deep cleaning, pest control", "icon": "🧹", "priceRange": "৳1000-৳5000" },
+    { "id": "cat-8", "name": "Civil Work", "description": "Masonry, tiles, false ceiling", "icon": "🏗️", "priceRange": "৳3000-৳50000" }
+  ],
+  "users": [
+    { "id": "user-1", "phone": "01712345678", "name": "Rafiq Ahmed", "role": "customer", "createdAt": "2024-01-15T10:00:00Z" }
+  ],
+  "technicians": [
+    { 
+      "id": "tech-1", 
+      "phone": "01812345678", 
+      "name": "Karim Miah", 
+      "categories": ["cat-1", "cat-2"], 
+      "experience": "8 years",
+      "bio": "Expert plumber and electrician in Dhaka",
+      "rating": 4.8,
+      "jobsCompleted": 156,
+      "verified": true,
+      "status": "approved",
+      "createdAt": "2024-01-10T10:00:00Z"
+    },
+    { 
+      "id": "tech-2", 
+      "phone": "01912345678", 
+      "name": "Rahim Sheikh", 
+      "categories": ["cat-3"], 
+      "experience": "5 years",
+      "bio": "Specialized in all AC brands",
+      "rating": 4.6,
+      "jobsCompleted": 89,
+      "verified": true,
+      "status": "approved",
+      "createdAt": "2024-01-12T10:00:00Z"
+    },
+    { 
+      "id": "tech-3", 
+      "phone": "01612345678", 
+      "name": "Salam Khan", 
+      "categories": ["cat-4", "cat-5"], 
+      "experience": "12 years",
+      "bio": "Master painter and carpenter",
+      "rating": 4.9,
+      "jobsCompleted": 234,
+      "verified": true,
+      "status": "approved",
+      "createdAt": "2024-01-08T10:00:00Z"
+    },
+    { 
+      "id": "tech-4", 
+      "phone": "01512345678", 
+      "name": "Babu Das", 
+      "categories": ["cat-6", "cat-7"], 
+      "experience": "6 years",
+      "bio": "Appliance and cleaning specialist",
+      "rating": 4.4,
+      "jobsCompleted": 67,
+      "verified": false,
+      "status": "pending",
+      "createdAt": "2024-02-01T10:00:00Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "book-1",
+      "customerId": "user-1",
+      "customerName": "Rafiq Ahmed",
+      "customerPhone": "01712345678",
+      "technicianId": "tech-1",
+      "technicianName": "Karim Miah",
+      "categoryId": "cat-1",
+      "categoryName": "Plumbing",
+      "status": "completed",
+      "address": "House 42, Road 5, Dhanmondi, Dhaka",
+      "problem": "Kitchen sink blocked, water not draining",
+      "scheduledDate": "2024-02-10",
+      "scheduledTime": "10:00 AM",
+      "estimatedPrice": "৳800-৳1500",
+      "finalPrice": "৳1200",
+      "priceBreakdown": { "labor": "৳800", "parts": "৳300", "visit": "৳100" },
+      "rating": 5,
+      "review": "Excellent work, very professional!",
+      "createdAt": "2024-02-08T10:00:00Z",
+      "completedAt": "2024-02-10T12:30:00Z"
+    }
+  ],
+  "admin": {
+    "accessCode": "admin123"
+  }
+}
